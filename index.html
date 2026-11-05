@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237c3aed' stroke-width='2'><circle cx='12' cy='12' r='2'/><path d='M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factory Ear - Acoustic Anomaly Detection & Tool-Wear Monitoring</title>
+    
+    <!-- Tailwind CSS (loaded for styling in both Vite and standalone preview) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#f5f3ff',
+                100: '#ede9fe',
+                200: '#ddd6fe',
+                300: '#c4b5fd',
+                400: '#a78bfa',
+                500: '#8b5cf6',
+                600: '#7c3aed',
+                700: '#6d28d9',
+                800: '#5b21b6',
+                900: '#4c1d95',
+              },
+              navy: {
+                800: '#111827',
+                900: '#0b1120',
+                950: '#070b14',
+              },
+              lavender: {
+                50: '#fbfaff',
+                100: '#f5f3ff',
+                200: '#ede9fe',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="bg-[#f5f3ff] text-slate-800 antialiased min-h-screen">
+    <div id="root">
+      <div id="loading-fallback" class="min-h-screen flex items-center justify-center bg-[#f5f3ff]">
+        <div class="text-center p-8 bg-white rounded-2xl border border-purple-100 shadow-sm max-w-md">
+          <div class="w-12 h-12 rounded-2xl bg-purple-600 text-white flex items-center justify-center mx-auto mb-4 animate-pulse">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path>
+            </svg>
+          </div>
+          <h2 class="font-bold text-slate-900 text-base">Factory Ear Industrial Workbench</h2>
+          <p class="text-xs text-slate-500 mt-1">Initializing acoustic anomaly & tool-wear monitoring environment...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vite development entry point -->
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Standalone browser fallback when running without a Vite server -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="src/standalone.js"></script>
+  </body>
+</html>
